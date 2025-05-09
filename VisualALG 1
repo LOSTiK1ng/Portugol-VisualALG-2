@@ -1,0 +1,48 @@
+Algoritmo "Jogo de Advinhação"
+
+Var
+// Seção de Declarações das variáveis
+
+r,p1,p2,a1,a2:inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc...
+   escreval (" ")
+   escreval("--------------------------------")
+   escreval("Palpite do jogador 1 de 0 à 100:")
+                                     leia(p1)
+   escreval("Palpite do jogador 2 de 0 à 100:")
+                                     leia(p2)
+   escreval("-------------------------------")
+   aleatorio on
+   leia(r)
+   aleatorio off
+   se (p1>r) entao
+   a1 <- (p1 - r)
+   senao
+   se (p1<r) entao
+   a1 <- (r-p1)
+   fimse
+   se (p2>r) entao
+   a2 <- (p2 - r)
+   a2 <- (r - p2)
+   fimse
+   escreval (" ")
+   escreval ("------------------------------")
+   escreval ("Palpite do jogador 1:",p1)
+   escreval ("Palpite do jogador 2:",p2)
+   escreval ("Resultado final:",r)
+   escreval ("------------------------------")
+
+   se (a1<a2)entao
+   escreval ("Parabéns jogador 1, voce acertou!")
+   senao
+   se (a2<a1) entao
+           escreval ("Parabéns jogador 2, voce acertou!")
+   senao
+           escreval ("Os dois jogadores empataram!")
+   fimse
+   fimse
+Fimalgoritmo
+fimse
+Fimalgoritmo
