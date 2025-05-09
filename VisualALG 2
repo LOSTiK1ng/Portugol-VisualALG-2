@@ -1,0 +1,14 @@
+Algoritmo "semnome"
+Var
+c:inteiro
+Inicio
+escreval (" ")
+escreval (" --------------------------- ")
+escreval ("Qual numero voçe quer diminuir?")
+leia (c)
+escreval (" --------------------------- ")
+repita
+escreval (c)
+c <- c - 1
+ate 1 > c
+Fimalgoritmo
