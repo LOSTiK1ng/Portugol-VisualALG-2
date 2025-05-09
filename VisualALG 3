@@ -1,0 +1,25 @@
+Algoritmo "semnome"
+Var
+c:inteiro
+r:real
+z:inteiro
+Inicio
+repita
+escreval ("Digite um número de 1 a 10")
+leia (c)
+  se c > 10 entao
+  escreval ("Numero indisponivel para tabuada!, Digite um número de 1 a 0")
+  senao
+  se 1 > c entao
+  escreval("Numero indisponivel para tabuada!, Digite um número de 1 a 0")
+  fimse
+  fimse
+  ate ( c >= 1 ) e ( c <= 10 )
+  escreval("---------------------------------")
+  escreval("A tabuada do",c," é:")
+  para z de 1 ate 10 faca
+  r <- (c * z)
+  escreval(c,"X",z,"=",r)
+  fimpara
+  escreval ("-------------------------------")
+Fimalgoritmo
