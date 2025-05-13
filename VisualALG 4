@@ -1,0 +1,126 @@
+Algoritmo " "
+Var
+z,y,a,b,c,d:real
+x:inteiro
+Inicio
+escreval("CALCULADORA")
+escreval("--------------------------")
+escreval("Escolha qual operação voce deseja fazer")
+escreval("1. SUBTRAÇÃO")
+escreval("2. ADIÇÃO")
+escreval("3. MULTIPLICAÇÃO")
+escreval("4. DIVISÃO")
+escreva("?:")
+leia(x)
+escreval("Digite quantos numeros voçe deseja usar na operação de 2 numero ate 5 numeros:")
+leia(y)
+se y = 2 entao
+   escreval("Quais são esses numeros?:")
+   escreva("Qual o primeiro numero?")
+   leia(z)
+   escreva("Qual o segundo numero?")
+   leia(a)
+   leia(z,a)
+
+   escolha(x)
+          caso 1
+               escreval("A subtração da operação é: ", z - a)
+               escreval("--------------------------")
+          caso 2
+               escreval("O resultado da soma é: ", z + a)
+          caso 3
+               escreval("O resultado da soma é: ", z * a)
+               escreval("--------------------------")
+          caso 4
+               escreval("O resultado da soma é: ", z / a)
+               escreval("--------------------------")
+          outrocaso
+               escreval("Digite dois valores válidos!")
+               escreval("--------------------------")
+               fimescolha
+               fimse
+se y = 3 entao
+   escreval("Quais são esses numeros?:")
+   escreva("Qual o primeiro numero?")
+   leia(z)
+   escreva("Qual o segundo numero?")
+   leia(a)
+   escreva("Qual o terceiro numero?")
+   leia(b)
+   escolha(x)
+           caso 1
+               escreval("A subtração da operação é: ", z - a - b)
+               escreval("--------------------------")
+          caso 2
+               escreval("O resultado da soma é: ", z + a + b)
+               escreval("--------------------------")
+          caso 3
+               escreval("O resultado da soma é: ", z * a * b)
+               escreval("--------------------------")
+          caso 4
+               escreval("O resultado da soma é: ", z / a / b)
+               escreval("--------------------------")
+          outrocaso
+               escreval("Digite dois valores válidos!")
+               escreval("--------------------------")
+               fimescolha
+               fimse
+se y = 4 entao
+   escreval("Quais são esses numeros?:")
+   escreva("Qual o primeiro numero?")
+   leia(z)
+   escreva("Qual o segundo numero?")
+   leia(a)
+   escreva("Qual o terceiro numero?")
+   leia(b)
+   escreva("Qual o quarto numero?")
+   leia(c)
+   escolha(x)
+           caso 1
+               escreval("A subtração da operação é: ", z - a - b -c)
+               escreval("--------------------------")
+          caso 2
+               escreval("O resultado da soma é: ", z + a + b +c)
+               escreval("--------------------------")
+          caso 3
+               escreval("O resultado da soma é: ", z * a * b * c)
+               escreval("--------------------------")
+          caso 4
+               escreval("O resultado da soma é: ", z / a / b / c)
+               escreval("--------------------------")
+          outrocaso
+               escreval("Digite dois valores válidos!")
+               escreval("--------------------------")
+               fimescolha
+               fimse
+se y = 5 entao
+   escreval("Quais são esses numeros?:")
+   escreva("Qual o primeiro numero?")
+   leia(z)
+   escreva("Qual o segundo numero?")
+   leia(a)
+   escreva("Qual o terceiro numero?")
+   leia(b)
+   escreva("Qual o quarto numero?")
+   leia(c)
+   escreva("Qual o quinto numero?")
+   leia(d)
+   escolha(x)
+           caso 1
+               escreval("A subtração da operação é: ", z - a - b - c - d)
+               escreval("--------------------------")
+          caso 2
+               escreval("O resultado da soma é: ", z + a + b + c + d)
+               escreval("--------------------------")
+          caso 3
+               escreval("O resultado da soma é: ", z * a * b * c * d)
+               escreval("--------------------------")
+          caso 4
+               escreval("O resultado da soma é: ", z / a / b / c /d)
+               escreval("--------------------------")
+          outrocaso
+               escreval("Digite dois valores válidos!")
+               escreval("--------------------------")
+               fimescolha
+               fimse
+Fimalgoritmo
