@@ -19,7 +19,7 @@ leia (c)
   escreval("A tabuada do",c," é:")
   para z de 1 ate 10 faca
   r <- (c * z)
-  escreval(c,"X",z,"=",r)
+  escreval(c," X",z," =",r)
   fimpara
   escreval ("-------------------------------")
 Fimalgoritmo
