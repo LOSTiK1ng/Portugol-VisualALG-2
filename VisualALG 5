@@ -1,0 +1,47 @@
+algoritmo " "
+var
+   o: inteiro
+   s: real
+   e: real
+
+inicio
+   s <- 40000.00
+   e<- 80000.00
+
+   repetir
+      limpa()
+      escreval("-----------------------------------------------------------")
+      escreval("      BANCO INTERNACIONALMENTE BOM")
+      escreval("-----------------------------------------------------------")
+      escreval("Escolha Uma Opção")
+      escreval("1. Ver SALDO")
+      escreval("2. Para EMPRÉSTIMOS")
+      escreval("3. SAIR")
+      escreval("-----------------------------------------------------------")
+      leia(o)
+
+      limpa()
+
+      escolha o
+         caso 1
+            escreval("Saldo = R$ ", s:0:2)
+         caso 2
+            escreval("Empréstimo disponível: R$ ", e:0:2)
+         caso 3
+            escreval("-----------------------------------------------------------")
+            escreval("Obrigado pela preferência.")
+            escreval(">Fim do programa ")
+            escreval("-----------------------------------------------------------")
+         outrocaso
+            escreval("Opção inválida! Tente novamente.")
+      fimescolha
+
+      se opcao <> 3 entao
+         escreval()
+         escreval("Coloque uma opção válida pra iniciar o sistema.")
+         leia()
+      fimse
+
+   ate opcao = 3
+
+fimalgoritmo
