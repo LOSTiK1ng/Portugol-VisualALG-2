@@ -1,0 +1,112 @@
+algoritmo " "
+var
+n,c:caracter
+s,b,em,u,retirada,x,j:real
+p:real
+o:inteiro
+inicio
+      escreval("-----------------------------------------------------------")
+      escreval("********BANCO INTERNACIONALMENTE BOM************")
+      escreval("-----------------------------------------------------------")
+      escreval("Qual o nome do Uuário?")
+      escreval("-----------------------------------------------------------")
+      leia(n)
+      escreval("Qual sua senha?")
+      leia(s)
+      limpatela
+      escreval("-----------------------------------------------------------")
+      escreval("********BANCO INTERNACIONALMENTE BOM************")
+      escreval("-----------------------------------------------------------")
+      repita
+      escreval("Qual o nome do Uuário?")
+      leia(c)
+      se c <> n entao
+      escreval("Nome ou senha incorreta, Digite seus dados novamente!")
+      escreval("-----------------------------------------------------------")
+      fimse
+      ate c = n
+      escreval("-----------------------------------------------------------")
+      repita
+      escreval("Qual sua senha?")
+      leia(x)
+      se x <> s entao
+      escreval("Nome ou senha incorreta, Digite seus dados novamente!")
+      escreval("-----------------------------------------------------------")
+      fimse
+      ate x = s
+      escreval("-----------------------------------------------------------")
+      timer(2000)
+      escreval("Otimo te ver novamente! ",n)
+      limpatela(20)
+      timer(0)
+em <- 80000
+repita
+      escreval("-----------------------------------------------------------")
+      escreval("********BANCO INTERNACIONALMENTE BOM************")
+      escreval("-----------------------------------------------------------")
+      escreval("Seu saldo atual:", u - retirada + j)
+      escreval("Emprestimo disponivel:", em - j)
+      escreval("-----------------------------------------------------------")
+      escreval("Escolha Uma Opção")
+      escreval("1. Depositar")
+      escreval("2. Fazer EMPRÉSTIMOS")
+      escreval("3. Retirar")
+      escreval("4. SAIR")
+      escreval("-----------------------------------------------------------")
+      leia(o)
+      escolha o
+         caso 1
+             escreval("Deposite algum valor:")
+             leia(u)
+             escreval("Valor depositado com sucesso!")
+             escreval("-----------------------------------------------------------")
+         caso 2
+         repita
+              escreval("Qual valor do seu emprestimo?")
+              leia(j)
+              se j > em entao
+              escreval("Valor do emprestimo esta acima do permetido, escolha um valor menor!")
+              fimse
+              ate j < em
+              escreval("-----------------------------------------------------------")
+              escreval("************Trava de segurança!!!!**********")
+              escreval("Caro cliente", n," Antes de continuar a transação, confirme que é voce mesmo!")
+              repita
+              escreval("Qual sua senha?")
+              leia(b)
+              se b <> s entao
+              escreval("SENHA INCORRETA, SISTEMA TRAVADO ATE ATIVAÇÃO COM A SENHA CORRETA!!!!")
+              escreval("-----------------------------------------------------------")
+              fimse
+              ate b = s
+              escreval("emprestimo bem sucedido!")
+              escreval("-----------------------------------------------------------")
+         caso 3
+              escreval("Voce tem a seguinte quantia:",u,",00")
+              escreval("Quantos voce deseja retirar?")
+              leia(retirada)
+                     se (retirada > u) entao
+                     escreval("Valor insuficiente para retirada")
+                     fimse
+                     se (u > retirada) entao
+                     p <- u - retirada
+                     escreval("------------------------------------------------------")
+                     escreval("Valor retirado com sucesso!")
+                     escreval("Valor retirado:",retirada,",00")
+                     escreval("Valor restante dentro do banco:",p ,",00")
+                     escreval("------------------------------------------------------")
+                     fimse
+
+          caso 4
+            escreval("-----------------------------------------------------------")
+            escreval("Obrigado pela preferência.")
+            escreval(">Fim do programa! ")
+            escreval("-----------------------------------------------------------")
+      outrocaso
+            escreval("Opção inválida! Tente novamente.")
+      fimescolha
+   ate o = 4
+
+      
+fimalgoritmo
+fimse
