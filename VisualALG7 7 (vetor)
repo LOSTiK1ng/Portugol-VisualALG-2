@@ -1,0 +1,27 @@
+Algoritmo "semnome"
+
+Var
+n: vetor[0..3] de inteiro
+n1,n2,n3,n0:inteiro
+Inicio
+      escreval("--------------------------------------------------------")
+      escreval("Digite o primeiro número:")
+      leia(n1)
+      escreval("Digite o segundo número:")
+      leia(n2)
+      escreval("Digite o terceiro número:")
+      leia(n3)
+      escreval("Digite o quarto número:")
+      leia(n0)
+      n[0] <- n1
+      n[1] <- n2
+      n[2] <- n3
+      n[3] <- n0
+      escreval("--------------------------------------------------------")
+      escreval("Na posição 1, o Valor é: ", n[1])
+      escreval("Na posição 2, o Valor é: ", n[2])
+      escreval("Na posição 3, o Valor é: ", n[3])
+      escreval("Na posição 4, o Valor é: ", n[0])
+      escreval("--------------------------------------------------------")
+      escreval("A soma de todos os números é: ", n[1] + n[2] + n[3] + n[0])
+Fimalgoritmo
