@@ -1,0 +1,22 @@
+Algoritmo "semnome"
+
+Var
+n: vetor[0..1] de caractere
+nr: vetor[2..3] de inteiro
+
+Inicio
+      escreval("Digite seu Nome completo:")
+      leia(n[0])
+      escreval("Escreva sua idade:")
+      leia(nr[2])
+      escreval("Escreva sua Cidade:")
+      leia(n[1])
+      escreval("Escreva o DDD da sua cidade:")
+      leia(nr[3])
+      escreval("-----------------------------------------------------------")
+      escreval("**********Aqui suas informações**********")
+      escreval("Seus nome: ",n[0])
+      escreval("Sua Idade: ",nr[2])
+      escreval("Sua City: ",n[1])
+      escreval("O DDD da sua City: ",nr[3])
+Fimalgoritmo
