@@ -1,0 +1,16 @@
+Algoritmo "semnome"
+
+
+Var
+n: vetor [1..5] de inteiro
+x:inteiro
+
+Inicio
+para x de 1 ate 5 faca
+n [x]<- randi(101)
+fimpara
+escreval("Números gerados:")
+para x de 1 ate 5 faca
+escreval("O número gerado foi:", n[x])
+fimpara
+Fimalgoritmo
